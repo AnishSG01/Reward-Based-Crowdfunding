@@ -1,0 +1,128 @@
+.signin-div
+{
+    height: 35rem;
+    margin: auto auto;
+    margin-top: 9rem;
+    width: 80vw;
+    box-shadow: .5px .5px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-div .signin-left
+{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-left .signin-left-upper
+{
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6674cc;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.signin-left .signin-left-lower
+{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signin-left-lower input
+{
+    margin-bottom: 1.4rem;
+    width: 50%;
+    color:#6674cc;
+    font-size: 1.1em;
+    padding: .5em .6em;
+    border: 1px solid rgb(168, 165, 165);
+    border-radius: 5px;
+}
+
+.signin-left-lower input:focus , 
+.signin-left-lower select :focus
+{
+    outline: none;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.signin-left-lower select
+{
+    margin-bottom: 1.4rem;
+    width: 50%;
+    color: rgb(116, 110, 110);
+    font-size: 1.1em;
+    padding: .5em .6em;
+    border: 1px solid rgb(168, 165, 165);
+    border-radius: 5px;
+}
+
+.signin-left-lower button
+{
+    width: 50%;
+    padding: .5em .6em;
+    border-radius: 5px;
+    background-color: #6674cc;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all .2s ease-in;
+}
+
+.signin-left-lower button:hover
+{
+    background-color: transparent;
+    color: #6674cc;
+    border: 1px solid #6674cc;
+    box-shadow: 1px 1px 5px rgb(168, 167, 167);
+}
+
+.signin-left-lower .lower-small
+{
+    margin-top: .5rem;
+    color: rgb(87, 87, 87);
+}
+
+.signin-left-lower .lower-small a
+{
+    color: #6674cc;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: .3rem;
+}
+
+.signin-div .signin-right
+{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid rgb(182, 181, 181);
+    /* background-color: aquamarine; */
+}
+
+.signin-right img
+{
+    width: 80%;
+    object-fit: contain;
+}

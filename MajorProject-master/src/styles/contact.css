@@ -1,0 +1,324 @@
+.contact-container
+{
+    height: 30em;
+    width: 100vw;
+    margin-top: 6em;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.651);
+    opacity: .9;
+    /* z-index: -100; */
+}
+
+.contact-container img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+    scale: 1;
+}
+
+.contact-form
+{
+    display: block;
+    position: relative;
+    margin: auto auto;
+    background-color: white;
+    height: 35em;
+    width: 80vw;
+    border: 1px solid white;
+    display: flex;
+    margin-top: -7em;
+    box-shadow: 1px 1px 10px black;
+    
+}
+
+.form-left
+{
+    height: 100%;
+    width: 70%;
+}
+
+
+.form-div1
+{
+    height: 18%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: auto auto;
+}
+
+.form-div1 h2{
+    color:#6674cc;
+    font-size: 2em;
+}
+
+.form-div1 p
+{
+    color: goldenrod;
+    font-size: 2em;
+}
+
+.form-div2
+{
+    height: 35%;
+    width: 100%;
+    /* border: 1px solid green; */
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.input-div
+{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid orangered; */
+}
+
+.input-div input
+{
+    width: 90%;
+    color: gray;
+    font-size: 1.1em;
+    padding: .5em .6em;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.form-div3
+{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid orangered; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div3 input , .form-div3 textarea
+{
+    width: 90%;
+    color: gray;
+    font-size: 1.1em;
+    padding: .5em .6em;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.form-div3 input:focus , .input-div input:focus , .form-div3 textarea:focus
+{
+    outline: none;
+}
+
+.form-div4
+{
+    height: 25%;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div4 .btn
+{
+    height: 3.5em;
+    width: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: .2em;
+    padding-right: .2em;
+    color: white;
+    background-color: #6674cc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-div4 .btn input
+{
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: transparent;
+    font-family: 'Rubik', 'sans-serif';
+    cursor: pointer;
+}
+
+.form-div4 .btn:hover
+{
+    background-color: #6674cc;
+    color: white;
+}
+
+
+.form-div4 p
+{
+    color: white;
+    font-size: 1em;
+    padding-left: .2em;
+}
+
+
+.form-right
+{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid yellow; */
+    background-color: #6674cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-right h2
+{
+    margin-bottom: 1.7em;
+    font-size: 1.8em;
+    color: white;
+}
+
+.form-right a
+{
+    font-weight:500;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.form-right a:hover
+{
+    color: white;
+}
+
+.form-right a i
+{
+    margin-right: .4em;
+    font-size: 1.5em;
+}
+
+.form-right .contact-gif
+{
+    height: 15em;
+    object-fit: contain;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px)
+{
+
+    .contact-container
+    {
+        height: 20em;
+    }
+
+    .contact-form
+    {
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 100vh;
+        /* margin-bottom: 50em; */
+    }
+
+    .form-left 
+    {
+        width: 100%;
+        height: 90%;
+        padding-bottom: 1em;
+    }
+
+    .form-left .form-div1
+    {
+        font-size: .8em;
+        height: 10%;
+    }
+
+    .form-div2
+    {
+        height: 65%;
+        padding: 2em;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        gap: 1.5rem;
+    }
+
+    .input-div
+    {
+        height: 100%;
+    }
+
+    .form-left .form-div3
+    {
+        width: 80%;
+        height: 10%;
+        margin: auto auto;
+        margin-top: 0px;
+        margin-bottom: .5em;
+    }
+
+    .form-div4
+    {
+        height: 10%;
+    }
+
+    .form-div4 .btn
+    {
+        height: 2em;
+        width: 6em;
+        font-size: 1em;
+        padding: .01em .5em;
+    }
+
+    .form-div3 input
+    {
+        width: 100%;
+    }
+
+    .form-right
+    {
+        width: 100%;
+        height: 40%;
+        padding-bottom: 1em;
+        box-sizing: border-box;
+    }
+
+    .form-right a
+    {
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    .form-right h2
+    {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .form-right .contact-gif
+    {
+        height: 12em;
+    }
+
+}
+
+

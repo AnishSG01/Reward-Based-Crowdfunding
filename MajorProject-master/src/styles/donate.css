@@ -1,0 +1,39 @@
+.donate-main
+{
+    margin: auto auto;
+    margin-top: 9rem;
+    width: 95vw;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 5px rgb(174, 172, 172);
+}
+
+.donate-main .donate-header
+{
+    height: 20%;
+    width: 100%;
+    padding: .6rem;
+    border-bottom: 1px solid rgb(177, 175, 175);
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-header h2
+{
+    color: #6674cc;
+    font-family: 'Rubik', 'sans-serif';
+    font-weight: 500;
+}
+
+.donate-content
+{
+    height: 80%;
+    width: 100%;
+    padding: 2.5rem;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 2rem;
+    place-items: center;
+}

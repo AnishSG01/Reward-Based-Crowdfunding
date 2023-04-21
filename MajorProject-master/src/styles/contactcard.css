@@ -1,0 +1,175 @@
+.contactcard-main
+{
+    /* height: 7rem; */
+    width: 80%;
+    border: 1px solid rgb(165, 162, 162);
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactcard-main:hover
+{
+    box-shadow: 1px 1px 5px #6674cc;
+    border: 1px solid #6674cc;
+}
+
+.contactcard-main .contactcard-left
+{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .8rem;
+}
+
+.contactcard-main .contactcard-left p
+{
+    color: gray;
+    font-size: 1rem;
+    font-family: 'Rubik' ,'sans-serif';
+    text-align: justify;
+    line-height: .9rem;
+}
+
+.contactcard-main .contactcard-right
+{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid goldenrod; */
+    border-radius: 10px;
+}
+
+.reply-btn
+{
+    color:#6674cc;
+    width: 8rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #6674cc;
+    font-weight: 500;
+    padding: .2rem;
+}
+
+.reply-btn:hover
+{
+    background-color: #6674cc;
+    border: 2px solid #6674cc;
+    color: white;
+}
+
+/* Modal Styling */
+
+.contactModal-main
+{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    padding: .2rem;
+}
+
+.contactmodal-detail
+{
+    width: 100%;
+    border-bottom: 1px solid rgb(158, 157, 157);
+    color: rgb(71, 70, 70);
+    padding: .5rem;
+}
+
+.contactmodal-detail p
+{
+    line-height: 1rem;
+}
+
+.contactmodal-form
+{
+    width: 100%;
+    /* border: 1px solid blue; */
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactmodal-form h2
+{
+    text-align: center;
+    color: #6674cc;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+.contactmodal-form .contactmodal-div1
+{
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.contactmodal-div1 label
+{
+    color: gray;
+    font-weight: 500;
+}
+
+.contactmodal-div1 input
+{
+    color: gray;
+    border: 1px solid gray;
+    margin-left: .5rem;
+    padding: .2rem;
+    border-radius: 2px;
+    width: 85%;
+}
+
+.contactmodal-div1 textarea
+{
+    color: gray;
+    border: 1px solid gray;
+    padding: .2rem;
+    margin-left: 1rem;
+    margin-top: .5rem ;
+    border-radius: 2px;
+    width: 90%;
+}
+
+.contactmodal-div1 input:focus , .contactmodal-div1 textarea:focus
+{
+    outline: none;
+}
+
+.contactmodal-btn
+{
+    width: 50%;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.contactmodal-btn button
+{
+    width: 70%;
+    border: 2px solid #6674cc;
+    background-color: transparent;
+    color: #6674cc;
+    padding: .3rem;
+    font-weight: 500;
+    border-radius: 10px;
+    
+}
+
+.contactmodal-btn button:hover
+{
+    background-color: #6674cc;
+    color: white;
+}

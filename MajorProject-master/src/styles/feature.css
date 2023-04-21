@@ -1,0 +1,38 @@
+.feature
+{
+    height:22rem;
+    width: 30rem;
+    margin: auto auto;
+    overflow: hidden;
+}
+
+.feature .carosel-h3 .feature .carosel-p
+{
+    color:gray;
+    font-size: 1rem;
+}
+
+.feature img
+{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .feature
+    {
+        height:17rem;
+        width: 90vw;
+    }
+
+    .feature .carosel-h3 .feature .carosel-p
+    {
+        color:gray;
+        font-size: .7rem;
+    }
+}
+

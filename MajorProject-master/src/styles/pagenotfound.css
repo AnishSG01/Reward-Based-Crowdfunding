@@ -1,0 +1,24 @@
+
+.error-main
+{
+    height: 10vh;
+    margin: auto;
+    margin-top:15vh;
+    width: 90vw;
+    /* border: 1px solid whitesmoke; */
+    color: #6674cc;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-main a 
+{
+    text-decoration: none;
+    color: #6674cc;
+    border: 1px solid #6674cc;
+    padding: 8px 15px;
+    border-radius: 5px;
+
+}
