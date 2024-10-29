@@ -15,9 +15,9 @@ app.use(express.urlencoded({extended:true}));
 
 connectToDb();
 
-app.use('/api' , userRoute)
-app.use('/api', donateRoute)
-app.use('/api', contactRoute)
-app.use('/api', emailRoute )
+app.use('/user' , userRoute)
+app.use('/donate', donateRoute)
+app.use('/contact', contactRoute)
+app.use('/email', emailRoute )
 
 module.exports = app;
